@@ -12,8 +12,11 @@
 ![apache-server-Test-Page](./Images/apache_server_test_page.png)
 
 `sudo apt install mysql-server`
+
 `sudo mysql`
+
 `sudo mysql_secure_installation`
+
 `sudo mysql -p`
 ## mysql server success output
 ![mysql-server-success-Page](./Images/mysql_installation_success.png)
