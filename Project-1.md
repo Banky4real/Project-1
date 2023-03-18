@@ -13,3 +13,12 @@
 
 ## mysql server success output
 ![apache-server-Test-Page](./Images/mysql_installation_success.png)
+
+## mysql security script output
+![security-script-for-mysql](./Images/mysql_security_script.png)
+
+## mysql password config success
+![successful-mysql-password-config-output](./Images/mysql_password_config_success.png)
+
+## mysql successful connection output
+![mysql-connection-successful](./Images/mysql_successful_connection.png)
