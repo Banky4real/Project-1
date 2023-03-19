@@ -63,3 +63,27 @@
 ## Echo Command Output on Browser using public address
 `http://<Public-DNS-Name>:80`
 ![Echo_command_output](./Images/index.html_file_echo_command_output.png)
+
+## Editing the Apache directory config file to change inded.php order
+`sudo vim /etc/apache2/mods-enabled/dir.conf`
+## Inserting the order Precedence into the blank text editor
+`<IfModule mod_dir.c>
+        #Change this:
+        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+        #To this:
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>`
+
+![order_precedence_index.php](./Images/inserting_order_precedence_index.php.png)
+
+## Effecting changes
+`sudo systemctl reload apache2`
+![Effecting_changes](./Images/saving_changes.png)
+
+## Creating Index.php File
+`vim /var/www/projectlamp/index.php`
+![Effecting_changes](./Images/creating_index.php_file.png)
+
+## Index.Php landing page order precedence set
+`vim /var/www/projectlamp/index.php`
+![Effecting_changes](./Images/index.php%20page.png)
